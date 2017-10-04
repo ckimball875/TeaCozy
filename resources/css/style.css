@@ -43,7 +43,7 @@ h2, h4, h5 {
   color: seashell;
 }
 
-h2 {
+h2, h3 {
   margin-bottom: 10px;
 }
 
@@ -83,10 +83,30 @@ h4 {
 
 .mission {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-image: url("../../resources/images/img-mission-background.jpg");
   height: 700px;
   width: 1200px;
   margin: 0 auto;
+}
+
+.ourMissionBanner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1200px;
+  background-color: black;
+}
+
+.ourMissionBanner  h2 {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.ourMissionBanner  h4 {
+  margin-bottom: 10px;
 }
 
 .teaOfTheMonth {
@@ -138,10 +158,40 @@ h4 {
 }
 
 .locations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-image: url("../../resources/images/img-locations-background.jpg");
   height: 570px;
   width: 1200px;
   margin: 0 auto;
+}
+
+.locations h2 {
+  margin-top: 85px;
+  margin-bottom: 15px;
+}
+
+.locationBoxes {
+  display: flex;
+  justify-content: space-between;
+  height: 280px;
+  width: 980px;
+  opacity: 1;
+}
+
+.locationBox {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: inherit;
+  width: 300px;
+  display: flex;
+}
+
+.locationBox .text {
+  margin-bottom: 20px;
 }
 
 .contactInfo {
@@ -162,9 +212,4 @@ footer {
   align-items: center;
   height: 70px;
   z-index: 10;
-}
-
-.fontSize16 {
-  margin-left: 20px;
-  font-size: 16px;
 }
